@@ -1,0 +1,178 @@
+[
+    {
+        "name": "B.Com",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "14",
+        "mappedId": 14,
+        "BotMappedId": null,
+        "id": 14
+    },
+    {
+        "name": "B.Tech",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "1",
+        "mappedId": 1,
+        "BotMappedId": null,
+        "id": 1
+    },
+    {
+        "name": "B.Tech - CS",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "2",
+        "mappedId": 2,
+        "BotMappedId": null,
+        "id": 2
+    },
+    {
+        "name": "B.Tech - DCS",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "3",
+        "mappedId": 3,
+        "BotMappedId": null,
+        "id": 3
+    },
+    {
+        "name": "B.Tech - ME",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "4",
+        "mappedId": 4,
+        "BotMappedId": null,
+        "id": 4
+    },
+    {
+        "name": "B.Tech Lateral",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "5",
+        "mappedId": 5,
+        "BotMappedId": null,
+        "id": 5
+    },
+    {
+        "name": "BA",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "15",
+        "mappedId": 15,
+        "BotMappedId": null,
+        "id": 15
+    },
+    {
+        "name": "BBA",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "13",
+        "mappedId": 13,
+        "BotMappedId": null,
+        "id": 13
+    },
+    {
+        "name": "Masters & Doctorate",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "12",
+        "mappedId": 12,
+        "BotMappedId": null,
+        "id": 12
+    },
+    {
+        "name": "Others",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "16",
+        "mappedId": 16,
+        "BotMappedId": null,
+        "id": 16
+    },
+    {
+        "name": "School of Agriculture",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "10",
+        "mappedId": 10,
+        "BotMappedId": null,
+        "id": 10
+    },
+    {
+        "name": "School of Allied Sciences",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "9",
+        "mappedId": 9,
+        "BotMappedId": null,
+        "id": 9
+    },
+    {
+        "name": "School Of Architecture",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "6",
+        "mappedId": 6,
+        "BotMappedId": null,
+        "id": 6
+    },
+    {
+        "name": "School of Basic & Applied Sciences",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "8",
+        "mappedId": 8,
+        "BotMappedId": null,
+        "id": 8
+    },
+    {
+        "name": "School of Computer Science",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "11",
+        "mappedId": 11,
+        "BotMappedId": null,
+        "id": 11
+    },
+    {
+        "name": "School Of Law",
+        "isActive": true,
+        "isSystemValue": false,
+        "entity1Code": null,
+        "sequence": null,
+        "mappedCode": "7",
+        "mappedId": 7,
+        "BotMappedId": null,
+        "id": 7
+    }
+]

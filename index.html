@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative min-h-screen w-screen overflow-x-hidden bg-cover bg-center flex flex-col justify-between"
+      style="background-image: url('./img/background.jpeg')"
+    >
+      <!-- 🔹 Transparent Fixed Top Bar -->
+      <div
+        class="fixed top-0 left-0 w-screen z-50 flex flex-wrap md:flex-nowrap justify-between items-center px-2 sm:px-4 md:px-12 py-3 bg-gradient-to-r from-black/80 via-yellow-100/70 to-yellow-400/70 shadow-md backdrop-blur-sm"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <img
+            src="./img/futurestacks.png"
+            alt="futureStack"
+            class="h-8 sm:h-10 md:h-14"
+          />
+        </div>
+
+        <!-- Contact + Button -->
+        <div
+          class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-1 sm:space-y-0 mt-2 sm:mt-0"
+        >
+          <p
+            class="hidden lg:block text-black text-xs sm:text-sm md:text-base font-semibold text-center"
+          >
+            📞 +91 9876543210 | ✉️ info@amityonline.com
+          </p>
+          <a
+            href="#apply"
+            class="bg-blue-900 text-white px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base font-medium rounded-lg hover:scale-105 hover:bg-blue-800 transition transform shadow-md"
+          >
+            Enquire Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Content Block -->
+      <div
+        class="relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full px-2 sm:px-4 md:px-16 lg:px-32 gap-4 sm:gap-6 md:gap-10 pt-20 md:pt-24 overflow-x-hidden"
+      >
+        <!-- Left Section (Text) -->
+        <div
+          class="lg:w-1/2 w-full flex justify-center text-center lg:text-left"
+        >
+          <div
+            class="bg-yellow-500/70 p-4 sm:p-6 md:p-12 lg:p-16 rounded-lg shadow-lg max-w-full w-full"
+          >
+            <h2
+              class="text-xl sm:text-2xl lg:text-4xl font-extrabold text-gray-900 leading-snug mb-4 sm:mb-6"
+            >
+              SHAPE YOUR FUTURE WITH <br />
+              ONLINE DEGREE PROGRAMMES
+            </h2>
+
+            <a
+              href="#apply"
+              class="inline-block bg-blue-900 text-white px-4 sm:px-6 py-2 sm:py-3 font-semibold rounded hover:scale-105 hover:bg-blue-800 transition transform text-sm sm:text-base"
+            >
+              APPLY NOW
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="lg:w-1/2 w-full flex justify-center mt-4 lg:mt-0">
+          <div
+            class="w-full max-w-full sm:max-w-lg card-bg backdrop-blur-md p-4 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-2xl space-y-3 sm:space-y-4 border border-gray-200 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.6)] hover:border-cyan-400 hover:scale-[1.01]"
+          >
+            <!-- Form content -->
+            <h2
+              class="text-lg sm:text-xl text-white font-orbitron font-bold text-center mb-2 sm:mb-4 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5 sm:w-6 sm:h-6 text-[var(--green-light)] mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
+              </svg>
+              Enquire Now
+            </h2>
+            <form id="enquiry-form" class="space-y-2 sm:space-y-3">
+              <input
+                type="text"
+                id="first-name"
+                required
+                placeholder="Full Name*"
+                class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] transition bg-white/90 text-gray-800 placeholder-gray-500"
+              />
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="Email Address*"
+                class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] transition bg-white/90 text-gray-800 placeholder-gray-500"
+              />
+              <div class="flex">
+                <span
+                  class="inline-flex items-center px-2 py-2 border border-r-0 rounded-l-lg bg-gray-200 text-gray-600 text-sm sm:text-base font-medium"
+                >
+                  <img
+                    src="https://flagcdn.com/w40/in.png"
+                    alt="IN"
+                    class="w-4 h-4 sm:w-5 sm:h-5 rounded-sm object-cover"
+                    loading="lazy"
+                  />+91
+                </span>
+                <input
+                  type="tel"
+                  id="mobile-number"
+                  required
+                  placeholder="Phone Number*"
+                  maxlength="10"
+                  pattern="[0-9]{10}"
+                  class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] transition bg-white/90 text-gray-800 placeholder-gray-500"
+                />
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+                <select
+                  id="state"
+                  required
+                  class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] bg-white/90 text-gray-800"
+                >
+                  <option value="" disabled selected>State*</option>
+                </select>
+                <select
+                  id="city"
+                  required
+                  class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] bg-white/90 text-gray-800"
+                >
+                  <option value="" disabled selected>City*</option>
+                </select>
+              </div>
+              <select
+                id="program"
+                required
+                class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] bg-white/90 text-gray-800"
+              >
+                <option value="" disabled selected>Select Program*</option>
+              </select>
+              <select
+                id="elective"
+                required
+                class="w-full px-2 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--blue-light)] bg-white/90 text-gray-800"
+              >
+                <option value="" disabled selected>Select Elective*</option>
+              </select>
+              <div class="flex items-start space-x-1">
+                <input
+                  type="checkbox"
+                  id="terms-checkbox"
+                  required
+                  class="mt-1 h-4 w-4 text-[var(--blue-light)] focus:ring-[var(--blue-light)] border-gray-300 rounded"
+                />
+                <label
+                  for="terms-checkbox"
+                  class="text-xs sm:text-sm text-white leading-snug"
+                >
+                  I agree to receive information regarding my submitted
+                  applications by signing up on futurestepsolutions.*
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="w-full text-white bg-gradient-to-r from-[var(--green-dark)] to-[var(--green-light)] py-2 sm:py-2.5 rounded-lg hover:from-[var(--green-light)] hover:to-[var(--green-dark)] transition font-semibold text-sm sm:text-base shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--green-light)]"
+              >
+                Submit Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Process Section -->
+    <section id="RegistrationProcess" class="w-full flex flex-col md:flex-row">
+      <!-- Left Side Background (Blue) -->
+      <div
+        class="md:w-1/4 w-full bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 flex items-center justify-center py-10 sm:py-12 px-4 sm:px-6"
+      >
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-white relative inline-block text-center md:text-left leading-snug"
+        >
+          Registration <br />
+          Process
+          <span
+            class="absolute left-0 bottom-[-6px] w-full h-[3px] bg-white"
+          ></span>
+        </h2>
+      </div>
+
+      <!-- Right Side Steps -->
+      <div
+        class="md:w-3/4 w-full bg-gray-50 relative py-10 sm:py-12 px-4 sm:px-6"
+      >
+        <div
+          class="flex flex-wrap justify-center md:justify-between items-center relative overflow-hidden"
+        >
+          <!-- Animated line (hidden on small screens to avoid clutter) -->
+          <div
+            class="absolute top-1/2 left-0 w-full h-[3px] bg-yellow-200 hidden sm:block"
+          >
+            <div class="h-[3px] bg-blue-900 animate-line"></div>
+          </div>
+
+          <!-- Step Items -->
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[0s]"
+            >
+              <img
+                src="./img/regestration-icon.png"
+                alt="Registration-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">Register Yourself</p>
+          </div>
+
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[1s]"
+            >
+              <img
+                src="./img/otp-icon.png"
+                alt="OTP-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">OTP Verification</p>
+          </div>
+
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[2s]"
+            >
+              <img
+                src="./img/fee-icon.png"
+                alt="fee-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">
+              Pay Application Fee
+            </p>
+          </div>
+
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[3s]"
+            >
+              <img
+                src="./img/reset-icon.png"
+                alt="reset-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">Reset the Portal</p>
+          </div>
+
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[4s]"
+            >
+              <img
+                src="./img/fill-form-icon.png"
+                alt="fill-form-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">Fill the Form</p>
+          </div>
+
+          <div
+            class="relative flex flex-col items-center text-center w-1/2 sm:w-1/3 lg:w-1/6 mb-8 sm:mb-10"
+          >
+            <div
+              class="flex items-center justify-center animate-step delay-[5s]"
+            >
+              <img
+                src="./img/call-icon.png"
+                alt="call-icon"
+                class="w-12 h-12 sm:w-14 sm:h-14"
+              />
+            </div>
+            <p class="mt-3 text-xs sm:text-sm font-medium">Await Call</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="w-full bg-white py-6 overflow-hidden">
+      <div class="relative w-full">
+        <!-- Animation Wrapper -->
+        <div class="logos flex space-x-12 animate-scroll">
+          <!-- Logos -->
+          <img src="./img/logo1.png" alt="Logo 1" class="h-20 object-contain" />
+          <img src="./img/logo2.png" alt="Logo 2" class="h-20 object-contain" />
+          <img src="./img/logo3.png" alt="Logo 3" class="h-20 object-contain" />
+          <img src="./img/logo4.png" alt="Logo 4" class="h-20 object-contain" />
+          <img src="./img/logo5.png" alt="Logo 5" class="h-20 object-contain" />
+
+          <img
+            src="./img/logo6.webp"
+            alt="Logo 6"
+            class="h-20 object-contain"
+          />
+          <img
+            src="./img/logo7.webp"
+            alt="Logo 7"
+            class="h-20 object-contain"
+          />
+          <img src="./img/logo1.png" alt="Logo 1" class="h-20 object-contain" />
+          <img src="./img/logo2.png" alt="Logo 2" class="h-20 object-contain" />
+          <img src="./img/logo3.png" alt="Logo 3" class="h-20 object-contain" />
+          <img src="./img/logo4.png" alt="Logo 4" class="h-20 object-contain" />
+          <img src="./img/logo5.png" alt="Logo 5" class="h-20 object-contain" />
+          <img
+            src="./img/logo6.webp"
+            alt="Logo 6"
+            class="h-20 object-contain"
+          />
+          <img
+            src="./img/logo7.webp"
+            alt="Logo 7"
+            class="h-20 object-contain"
+          />
+          <img src="./img/logo1.png" alt="Logo 1" class="h-20 object-contain" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section
+      id="why-choose"
+      class="w-full py-16 md:py-32 relative bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./img/usp-bg.jpg')"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Title -->
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 md:mb-16"
+        >
+          Why Choose Us
+        </h2>
+
+        <!-- Desktop Circle layout (md+) -->
+        <div class="hidden md:flex relative justify-center items-center">
+          <div
+            class="w-[560px] h-[560px] md:w-[640px] md:h-[640px] rounded-full flex items-center justify-center relative"
+          >
+            <!-- Dashed inner circle -->
+            <div
+              class="absolute w-[420px] h-[420px] md:w-[480px] md:h-[480px] rounded-full border-4 border-yellow-400 flex items-center justify-center z-10 bg-white/0"
+            >
+              <div
+                class="absolute w-[380px] h-[380px] md:w-[440px] md:h-[440px] rounded-full border-2 border-dashed border-blue-900/60 z-0"
+              ></div>
+
+              <!-- Center image -->
+              <div class="relative z-20">
+                <div
+                  class="rounded-full overflow-hidden w-56 h-56 md:w-64 md:h-64 p-1 bg-white shadow-xl border-4 border-white"
+                >
+                  <img
+                    src="./img/girl.png"
+                    alt="Center"
+                    class="w-full h-full object-cover block"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature bubbles (absolute positions) -->
+            <!-- Top -->
+            <div
+              class="absolute -top-12 flex flex-col items-center animate-fade-up"
+            >
+              <div
+                class="w-24 h-24 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg overflow-hidden"
+              >
+                <img
+                  src="./img/usp1.png"
+                  class="w-12 h-12 object-contain"
+                  alt="GlobalFaculty-icon"
+                />
+              </div>
+              <p class="mt-3 text-center text-base text-blue-900 max-w-[140px]">
+                Top Global Faculty
+              </p>
+            </div>
+
+            <!-- Top-right -->
+            <div
+              class="absolute right-[-28px] top-28 flex flex-col items-center text-center animate-fade-right"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg overflow-hidden"
+              >
+                <img
+                  src="./img/usp3.png"
+                  class="w-10 h-10 object-contain"
+                  alt="Services-icon"
+                />
+              </div>
+              <p class="mt-3 text-base text-blue-900 max-w-[140px]">
+                Career Services<br />for Job Readiness
+              </p>
+            </div>
+
+            <!-- Bottom-right -->
+            <div
+              class="absolute right-[-28px] bottom-28 flex flex-col items-center text-center animate-fade-right"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+              >
+                <img
+                  src="./img/usp4.png"
+                  class="w-10 h-10 object-contain"
+                  alt="placement-icon"
+                />
+              </div>
+              <p class="mt-3 text-base text-blue-900 max-w-[140px]">
+                Choose the way you want to learn
+              </p>
+            </div>
+
+            <!-- Bottom -->
+            <div
+              class="absolute -bottom-12 flex flex-col items-center animate-fade-down"
+            >
+              <div
+                class="w-24 h-24 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+              >
+                <img
+                  src="./img/usp6.png"
+                  class="w-10 h-10 object-contain"
+                  alt="Teacher-icon"
+                />
+              </div>
+              <p class="mt-3 text-center text-base text-blue-900 max-w-[140px]">
+                Online to Offline
+              </p>
+            </div>
+
+            <!-- Bottom-left -->
+            <div
+              class="absolute left-[-28px] bottom-28 flex flex-col items-center text-center animate-fade-left"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+              >
+                <img
+                  src="./img/usp5.png"
+                  class="w-10 h-10 object-contain"
+                  alt="payment-icon"
+                />
+              </div>
+              <p class="mt-3 text-base text-blue-900 max-w-[140px]">
+                Flexible payment options
+              </p>
+            </div>
+
+            <!-- Top-left -->
+            <div
+              class="absolute left-[-28px] top-28 flex flex-col items-center text-center animate-fade-left"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+              >
+                <img
+                  src="./img/usp2.png"
+                  class="w-10 h-10 object-contain"
+                  alt="Search-icon"
+                />
+              </div>
+              <p class="mt-3 text-base text-blue-900 max-w-[140px]">
+                Choose the way you want to learn
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile stacked layout (sm screens) -->
+        <div class="flex flex-col md:hidden gap-6 items-center">
+          <!-- Repeat bubble component for each feature -->
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp1.png"
+                class="w-10 h-10 object-contain"
+                alt="Top Global Faculty"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Top Global Faculty
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp2.png"
+                class="w-10 h-10 object-contain"
+                alt="Learning Options"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Choose the way you want to learn
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp3.png"
+                class="w-10 h-10 object-contain"
+                alt="Career Services"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Career Services for Job Readiness
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp4.png"
+                class="w-10 h-10 object-contain"
+                alt="Learning Flexibility"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Choose the way you want to learn
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp5.png"
+                class="w-10 h-10 object-contain"
+                alt="Payment Options"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Flexible payment options
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div
+              class="w-20 h-20 rounded-full bg-blue-900 border-4 border-yellow-400 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="./img/usp6.png"
+                class="w-10 h-10 object-contain"
+                alt="Online to Offline"
+              />
+            </div>
+            <p class="mt-2 text-center text-sm text-blue-900 max-w-[140px]">
+              Online to Offline
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="py-8 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">
+          OUR UNIQUE ADVANTAGES
+        </h2>
+
+        <!-- Responsive grid: 1 / 2 / 3 / 6 columns -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+        >
+          <!-- Card 1 -->
+          <div
+            class="adv-card group bg-yellow-400 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-amber-400 hover:to-pink-500 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage1.png"
+              alt="Brain"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              India's first AI-enabled Prof. AMI
+            </span>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="adv-card group bg-blue-900 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-400 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage2.png"
+              alt="Books"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              Diverse learning mediums
+            </span>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="adv-card group bg-yellow-400 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-orange-400 hover:to-fuchsia-500 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage5.png"
+              alt="People"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              Dedicated Academic Advisor
+            </span>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="adv-card group bg-blue-900 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-indigo-500 hover:to-purple-400 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage3.png"
+              alt="Audio-book"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              Audio books to make you learn on the go
+            </span>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="adv-card group bg-yellow-400 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-yellow-400 hover:to-green-400 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage6.png"
+              alt="Library"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              Access to Amity University Campus Library globally
+            </span>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="adv-card group bg-blue-900 rounded-xl p-6 flex flex-col items-center text-center shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-br hover:from-purple-600 hover:to-pink-500 hover:text-white cursor-pointer"
+          >
+            <img
+              src="./img/advantage4.png"
+              alt="Global"
+              class="mb-3 w-16 h-16 transition-transform duration-300 group-hover:-translate-y-1"
+            />
+            <span class="font-semibold text-sm md:text-base">
+              2,50,000 Global Alumni Network
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-4 text-gray-800">
+        Explore Our Courses
+      </h2>
+      <!-- Tabs -->
+      <div class="flex justify-center mb-10 gap-4">
+        <button
+          id="bachelorsTab"
+          class="px-8 py-2 rounded-full text-lg font-semibold shadow bg-blue-900 text-white transition-colors duration-300"
+        >
+          Bachelors Courses
+        </button>
+        <button
+          id="mastersTab"
+          class="px-8 py-2 rounded-full text-lg font-semibold shadow bg-blue-900 text-white border border-blue-900 transition-colors duration-300"
+        >
+          Masters Courses
+        </button>
+      </div>
+
+      <!-- Courses Container -->
+      <div
+        id="coursesContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- Bachelor courses (visible by default) -->
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl"
+          data-type="bachelor"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              CSE
+            </div>
+            <img
+              src="./img/CSE.jpg"
+              alt="CSE"
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            Computer Science & Engineering
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">4 Years | 8 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl"
+          data-type="bachelor"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              ECE
+            </div>
+            <img
+              src="./img/ECE.webp"
+              alt="ECE"
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            Electronics & Communication Engineering
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">4 Years | 8 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl"
+          data-type="bachelor"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              CE
+            </div>
+            <img
+              src="./img/Civil.jpg"
+              alt="CE"
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            B.Tech. - Civil Engineering
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">2 Years | 4 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Master courses (hidden by default) -->
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl hidden"
+          data-type="master"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              M.Tech
+            </div>
+            <img
+              src="./img/mtech1.jpeg"
+              alt="M.Tech"
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            M.Tech. - Mechanical Engineering
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">4 Years | 8 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl hidden"
+          data-type="master"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              M.Com
+            </div>
+            <img
+              src="./img/mcom.webp"
+              alt="M.Com"
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            M.Com - Professional
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">2 Years | 4 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+
+        <div
+          class="course-card bg-white rounded-2xl shadow-md flex flex-col items-center text-center p-6 transition-transform transition-shadow duration-500 ease-in-out cursor-pointer hover:scale-[1.05] hover:shadow-xl hidden"
+          data-type="master"
+        >
+          <div
+            class="w-full flex flex-col items-center bg-gray-50 rounded-lg overflow-hidden mb-4"
+          >
+            <div class="w-full py-2 bg-yellow-300 text-black font-bold text-xl">
+              L.L.M.
+            </div>
+            <img
+              src="./img/LLM.webp"
+              alt="L.L.M."
+              class="w-full h-40 object-cover rounded-b-2xl"
+            />
+          </div>
+          <h3 class="text-2xl font-bold text-gray-700 mb-2">
+            L.L.M. (Business & Corporate law)
+          </h3>
+          <div class="text-gray-600 text-lg mb-4">2 Years | 4 Semesters</div>
+          <button
+            class="mt-auto px-7 py-2 rounded-full bg-blue-900 text-white font-semibold text-lg shadow-md hover:bg-blue-800 transition duration-300"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="w-full bg-[#f9f2ef] py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-center text-3xl font-bold text-gray-800 mb-10">
+          Student Testimonials
+        </h2>
+
+        <div class="relative overflow-hidden">
+          <!-- Slider container -->
+          <div
+            id="testimonialSlider"
+            class="flex transition-transform duration-700 ease-in-out"
+          >
+            <!-- Testimonial 1 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                <p class="mb-6 text-gray-700">
+                  I sincerely thank REVA Business School and the CDC for giving
+                  me this wonderful opportunity. I am also thankful to all my
+                  teachers and mentors for providing me with the knowledge and
+                  guidance that has helped me to get this offer at ICICI
+                  Securities.
+                </p>
+                <img
+                  src="./img/user1.avif"
+                  alt="Dheeraj"
+                  class="w-16 h-16 mx-auto rounded-full mb-2"
+                />
+                <h3 class="font-semibold text-gray-800">Dheeraj S Shetty</h3>
+                <p class="text-gray-500">MCA</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                <p class="mb-6 text-gray-700">
+                  Another amazing testimonial goes here. This is where a
+                  student's feedback can be highlighted beautifully.
+                </p>
+                <img
+                  src="./img/user2.avif"
+                  alt="Student 2"
+                  class="w-16 h-16 mx-auto rounded-full mb-2"
+                />
+                <h3 class="font-semibold text-gray-800">Student 2</h3>
+                <p class="text-gray-500">MBA</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="min-w-full px-4">
+              <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                <p class="mb-6 text-gray-700">
+                  Yet another testimonial here. Highlight success stories of
+                  students in an engaging way.
+                </p>
+                <img
+                  src="./img/user3.avif"
+                  alt="Student 3"
+                  class="w-16 h-16 mx-auto rounded-full mb-2"
+                />
+                <h3 class="font-semibold text-gray-800">Student 3</h3>
+                <p class="text-gray-500">BBA</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Dots -->
+          <div class="flex justify-center mt-6 space-x-2">
+            <button
+              class="w-4 h-4 rounded-full bg-gray-400"
+              data-index="0"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-gray-400"
+              data-index="1"
+            ></button>
+            <button
+              class="w-4 h-4 rounded-full bg-gray-400"
+              data-index="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our Placement Partners -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">
+          Placement Partners
+        </h2>
+        <p class="text-sm sm:text-base text-gray-500 mb-12">
+          Data is based on on-campus information
+        </p>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8 items-center"
+        >
+          <!-- Logo 1 HDFC-->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img1.png"
+              alt="HDFC Bank"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+
+          <!-- Logo 2 TCS -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img-2.webp"
+              alt="TCS"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 3 Mphasis -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img3.webp"
+              alt="Mphasis"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 4 HCL -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img4.png"
+              alt="HCL"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 5 Marico -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img5.jpg"
+              alt="Marico"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 6 BNY Mellon -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img6.png"
+              alt="BNY Mellon"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 7 Honeywell -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img7.jpg"
+              alt="Honeywell"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 8 Wipro -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img8.png"
+              alt="Wipro"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 9 flipkart -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img9.svg"
+              alt="Flipkart"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 10 Amazon -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img10.svg"
+              alt="Amazon"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 11 Philips -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img11.png"
+              alt="Philips"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+          <!-- Logo 12 Google -->
+          <div
+            class="filter grayscale hover:grayscale-0 transform hover:-translate-y-2 hover:scale-105 transition duration-500 ease-in-out p-2"
+          >
+            <img
+              src="./img/placements-logo/place-img12.png"
+              alt="Google"
+              class="mx-auto h-12 sm:h-16 md:h-20 lg:h-24 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Admission Process -->
+    <section class="py-16 bg-[#f9f2ef] text-black">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 md:mb-12">
+          Admission Process
+        </h2>
+
+        <!-- Steps -->
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12"
+        >
+          <!-- Step 1 -->
+          <div
+            class="group relative flex flex-col items-center perspective w-28 h-28 sm:w-32 sm:h-32"
+          >
+            <div
+              class="w-full h-full bg-white rounded-full flex items-center justify-center transition-transform duration-500 transform-gpu group-hover:rotate-y-180 shadow-md"
+            >
+              <img
+                src="./img/check.png"
+                alt="Choose a Program"
+                class="w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-500"
+              />
+            </div>
+            <span class="mt-3 text-sm sm:text-base text-black font-medium">
+              Choose a Program
+            </span>
+          </div>
+
+          <!-- Arrow 1 -->
+          <div
+            class="hidden md:flex items-center text-blue-500 text-2xl md:text-3xl font-bold animate-pulse"
+          >
+            &gt;&gt;
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="group relative flex flex-col items-center perspective w-28 h-28 sm:w-32 sm:h-32"
+          >
+            <div
+              class="w-full h-full bg-white rounded-full flex items-center justify-center transition-transform duration-500 transform-gpu group-hover:rotate-y-180 shadow-md"
+            >
+              <img
+                src="./img/form.png"
+                alt="Apply Online"
+                class="w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-500"
+              />
+            </div>
+            <span class="mt-3 text-sm sm:text-base text-black font-medium">
+              Apply Online
+            </span>
+          </div>
+
+          <!-- Arrow 2 -->
+          <div
+            class="hidden md:flex items-center text-blue-500 text-2xl md:text-3xl font-bold animate-pulse"
+          >
+            &gt;&gt;
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="group relative flex flex-col items-center perspective w-28 h-28 sm:w-32 sm:h-32"
+          >
+            <div
+              class="w-full h-full bg-white rounded-full flex items-center justify-center transition-transform duration-500 transform-gpu group-hover:rotate-y-180 shadow-md"
+            >
+              <img
+                src="./img/handshake.png"
+                alt="Join the Program"
+                class="w-10 h-10 sm:w-12 sm:h-12 transition-transform duration-500"
+              />
+            </div>
+            <span class="mt-3 text-sm sm:text-base text-black font-medium">
+              Join the Program
+            </span>
+          </div>
+        </div>
+
+        <!-- Button Centered -->
+        <div class="mt-10 md:mt-12 flex justify-center">
+          <a
+            href="#apply"
+            class="bg-blue-900 text-white px-5 py-3 sm:px-6 sm:py-3 font-semibold rounded-lg hover:scale-105 hover:bg-blue-800 transition transform shadow-md"
+          >
+            APPLY NOW
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white pt-16 pb-8">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <!-- About -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">About Us</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              We provide top-notch educational programs and support students to
+              achieve their dreams. Join us to explore endless opportunities.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#admission" class="hover:text-blue-300 transition"
+                  >Admissions</a
+                >
+              </li>
+              <li>
+                <a href="#programs" class="hover:text-blue-300 transition"
+                  >Programs</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" class="hover:text-blue-300 transition"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-blue-300 transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact</h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+              <li>📍 123 Education St, City, Country</li>
+              <li>📞 +91 123 456 7890</li>
+              <li>✉️ info@yourdomain.com</li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div>
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="bg-blue-700 p-3 rounded-full hover:bg-blue-500 transition transform hover:scale-110"
+              >
+                <img
+                  src="./img/social-icon-1.png"
+                  class="w-5 h-5"
+                  alt="Facebook"
+                />
+              </a>
+              <a
+                href="#"
+                class="bg-blue-700 p-3 rounded-full hover:bg-blue-500 transition transform hover:scale-110"
+              >
+                <img
+                  src="./img/social-icon-2.png"
+                  class="w-5 h-5"
+                  alt="Twitter"
+                />
+              </a>
+              <a
+                href="#"
+                class="bg-blue-700 p-3 rounded-full hover:bg-blue-500 transition transform hover:scale-110"
+              >
+                <img
+                  src="./img/social-icon-3.png"
+                  class="w-5 h-5"
+                  alt="youtube"
+                />
+              </a>
+              <a
+                href="#"
+                class="bg-blue-700 p-3 rounded-full hover:bg-blue-500 transition transform hover:scale-110"
+              >
+                <img
+                  src="./img/social-icon-4.png"
+                  class="w-5 h-5"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-10 border-gray-700" />
+
+        <!-- Bottom Text -->
+        <div class="text-center text-gray-400 text-xs sm:text-sm">
+          &copy; 2025 Your Institution Name. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

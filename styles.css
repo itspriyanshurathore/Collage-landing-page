@@ -1,0 +1,414 @@
+:root {
+  --cycle: 6s;
+  --steps: 6;
+  --step-interval: 1s;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* -----------------------------------------------------------
+   Utility animations (fade/slide)
+----------------------------------------------------------- */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.animate-fadeInRight {
+  animation: fadeInRight 1.2s ease-out forwards;
+}
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes lineProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-line {
+  display: block;
+  width: 0%;
+  height: 100%;
+  will-change: width;
+  animation: lineProgress var(--cycle) linear infinite;
+}
+
+@keyframes stepPop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.35;
+    box-shadow: none;
+  }
+  8% {
+    transform: scale(1.18);
+    opacity: 1;
+    box-shadow: 0 0 18px rgba(250, 204, 21, 0.55);
+  }
+  16% {
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.35);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+    box-shadow: none;
+  }
+}
+
+.animate-step {
+  transform-origin: center;
+  animation: stepPop var(--cycle) cubic-bezier(0.22, 0.9, 0.26, 1) infinite;
+}
+
+.delay-\[0s\] {
+  animation-delay: 0s;
+}
+.delay-\[1s\] {
+  animation-delay: calc(var(--step-interval) * 1);
+}
+.delay-\[2s\] {
+  animation-delay: calc(var(--step-interval) * 2);
+}
+.delay-\[3s\] {
+  animation-delay: calc(var(--step-interval) * 3);
+}
+.delay-\[4s\] {
+  animation-delay: calc(var(--step-interval) * 4);
+}
+.delay-\[5s\] {
+  animation-delay: calc(var(--step-interval) * 5);
+}
+
+/* small visual polish for the circular step items */
+.step-circle {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  will-change: transform, box-shadow;
+}
+
+/* optional: hover glow for better interactivity */
+.step-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(250, 204, 21, 0.25);
+}
+
+/* Logo hover effect */
+.logos img {
+  transition: transform 0.3s ease; /* smooth scaling */
+}
+.logos img:hover {
+  transform: scale(1.2); /* increase size on hover */
+}
+
+/* -----------------------------------------------------------
+   Accessibility / reduced-motion
+----------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .animate-line,
+  .animate-step,
+  .animate-fadeInUp,
+  .animate-fadeInRight,
+  .animate-slideIn {
+    animation: none !important;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.hover\:pause-scroll:hover {
+  animation-play-state: paused;
+}
+.logos {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hover\:pause-scroll:hover {
+  animation-play-state: paused;
+}
+
+.logos img {
+  margin-right: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.logos img:hover {
+  transform: scale(1.2);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeDown {
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    transform: translateX(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeRight {
+  from {
+    transform: translateX(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.animate-fade-down {
+  animation: fadeDown 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.animate-fade-left {
+  animation: fadeLeft 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.animate-fade-right {
+  animation: fadeRight 1s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Slight hover pop for feature bubbles */
+#why-choose .w-16:hover,
+#why-choose .w-20:hover,
+#why-choose .w-24:hover {
+  transform: translateY(-6px) scale(1.03);
+  transition: transform 0.25s ease;
+}
+
+@keyframes bubble-blink {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+#why-choose .relative > .absolute > div > img {
+  animation: bubble-blink 2s infinite ease-in-out;
+}
+
+#why-choose .absolute:nth-child(1) img {
+  animation-delay: 0s;
+}
+#why-choose .absolute:nth-child(2) img {
+  animation-delay: 0.2s;
+}
+#why-choose .absolute:nth-child(3) img {
+  animation-delay: 0.4s;
+}
+#why-choose .absolute:nth-child(4) img {
+  animation-delay: 0.6s;
+}
+#why-choose .absolute:nth-child(5) img {
+  animation-delay: 0.8s;
+}
+#why-choose .absolute:nth-child(6) img {
+  animation-delay: 1s;
+}
+#why-choose .absolute:nth-child(7) img {
+  animation-delay: 1.2s;
+}
+.testimonial-card {
+  transition: all 0.4s ease-in-out;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.perspective {
+  perspective: 1000px;
+}
+.group:hover .group-hover\:rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/*
+ //////////////////////////////////////////////////////////////////////////////////////////
+  */
+
+/* Custom media query for extra small screens */
+@media (max-width: 418px) {
+  #hero .flex.flex-col.lg\\:flex-row {
+    flex-direction: column; /* stack text & form vertically */
+    padding-left: 1rem; /* smaller padding */
+    padding-right: 1rem;
+    gap: 1rem; /* reduce gap between sections */
+  }
+
+  #hero .lg\\:w-1\\2 {
+    width: 100%; /* full width for both sections */
+  }
+
+  #hero .bg-yellow-500\\70 {
+    padding: 1rem; /* smaller padding on text box */
+  }
+
+  #hero .card-bg {
+    padding: 1rem; /* smaller padding for form card */
+  }
+
+  #hero input,
+  #hero select,
+  #hero button {
+    font-size: 0.8rem; /* slightly smaller text */
+  }
+
+  #hero p,
+  #hero h2 {
+    font-size: clamp(
+      0.75rem,
+      2vw,
+      1.2rem
+    ); /* scale text for very small screens */
+  }
+
+  #hero .fixed {
+    flex-wrap: wrap; /* prevent top bar overflow */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #hero .fixed img {
+    height: 2.2rem; /* smaller logo for very small screens */
+  }
+
+  #hero .flex.flex-col.sm\\:flex-row.items-center {
+    flex-direction: column; /* stack contact + button */
+    gap: 0.5rem;
+  }
+
+  /* Prevent horizontal scroll */
+  #hero {
+    overflow-x: hidden;
+  }
+}
+
+/* iPad Pro Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  #hero {
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Keep it centered */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  #hero .relative.z-10 {
+    display: flex;
+    flex-direction: column !important; /* Stack text & form vertically */
+    gap: 2rem !important; /* Space between text and form */
+    padding-top: 6rem !important; /* Adjust top spacing */
+  }
+
+  /* Left Section (Text) */
+  #hero .lg\\:w-1\\2:nth-child(1) {
+    width: 90% !important; /* Make text container a bit smaller */
+    max-width: 600px !important;
+    text-align: center !important; /* Center text on iPad */
+  }
+
+  /* Right Section (Form) */
+  #hero .lg\\:w-1\\2:nth-child(2) {
+    width: 90% !important; /* Form width adjustment */
+    max-width: 600px !important;
+    margin-top: 2rem !important; /* Add spacing below text */
+  }
+}
